@@ -1,7 +1,7 @@
 import {useEffect, useState } from "react";
 import axiosApi from "../../axios-api";
 import { Quotes } from "../../types";
-// import Quote from "../../components/quote/Quote";
+import Quote from "../../components/quote/Quote";
 import { useParams } from "react-router-dom";
 
 
@@ -56,7 +56,7 @@ const Home=()=>{
                     {quotes.map((post)=>{
                         return(
                         <>
-                            {/* <Quote key={post.id} id={post.id} author={post.author} quote={post.quote} category={post.category}/> */}
+                            <Quote key={post.id} id={post.id} author={post.author} quote={post.quote} category={post.category}/>
                         </>
                         )
                     })} 
