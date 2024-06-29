@@ -55,9 +55,7 @@ const Home=()=>{
                 <div className="list-group">
                     {quotes.map((post)=>{
                         return(
-                        <>
                             <Quote key={post.id} id={post.id} author={post.author} quote={post.quote} category={post.category}/>
-                        </>
                         )
                     })} 
                 </div>

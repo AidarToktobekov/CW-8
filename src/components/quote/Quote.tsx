@@ -25,7 +25,7 @@ const Quote:React.FC<Quotes> = ({id, author, category, quote})=>{
         setLoading(true);
         
         try {
-            const response = await axiosApi.delete('/quotes/'+ id +'.json');
+            await axiosApi.delete('/quotes/'+ id +'.json');
             
         } finally {
             setLoading(false);

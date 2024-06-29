@@ -1,7 +1,5 @@
 import {ChangeEvent, useEffect, useState } from "react";
 import axiosApi from "../../axios-api";
-import { Quotes } from "../../types";
-import Quote from "../../components/quote/Quote";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 
 
