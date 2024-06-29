@@ -4,7 +4,7 @@ import './App.css';
 import Add from "./container/addQuote/Add";
 import SetQuote from "./container/set-quote/SetQuote";
 import SetAllQuote from "./container/set-quote/SetAllQuote";
-// import EditQuote from "./components/quote/EditQuote";
+import EditQuote from "./components/quote/EditQuote";
 
 const App= ()=> {
   
@@ -59,7 +59,7 @@ const App= ()=> {
                   )}/>
                    <Route path="/:id/category/edit" element={(
                       <>
-                        {/* <EditQuote/> */}
+                        <EditQuote/>
                       </>
                     )}/>
               </Route>
